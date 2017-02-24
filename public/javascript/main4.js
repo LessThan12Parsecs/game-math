@@ -3,10 +3,11 @@ window.onload = function () {
         context = canvas.getContext("2d"),
         width = canvas.width = window.innerWidth,
         height = canvas.height = window.innerHeight,
-        sun = particle.create(width/2,height/2,0,0),
-        planet = particle.create(width/2+200,height/2,10,-Math.PI/2);
+        sun = particle.create(width/2,height/2,10,-Math.PI/2),
+        planet = particle.create(width/2+200,height/2,1,-Math.PI/2);
 
-    sun.mass = 20000;
+    sun.mass = 1000;
+    planet.mass = 4;
 
 
     update();
