@@ -10,9 +10,8 @@ window.onload = function () {
         turningRight = false,
         thrusting = false;
 
-
     update();
-
+    ship.friction = 0.95;
     document.body.addEventListener("keydown", function (event) {
        switch(event.keyCode){
            case 38: //up
