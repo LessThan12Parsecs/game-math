@@ -13,7 +13,6 @@ window.onload = function () {
            particles.push(p);
         }
 
-
     update();
 
     function update() {

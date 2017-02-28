@@ -18,7 +18,7 @@ var particle = {
     },
 
     update:function () {
-        this.velocity.multiplyBy(this.friction);
+        //this.velocity.multiplyBy(this.friction);
         this.velocity.addTo(this.gravity);
         this.position.addTo(this.velocity);
     },
