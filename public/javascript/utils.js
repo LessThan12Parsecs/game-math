@@ -9,6 +9,10 @@ var util = {
 
     map: function(value,sourceMin,sourceMax,destMin,destMax) {
         return this.lerp(this.norm(value,sourceMin,sourceMax),destMin,destMax);
+    },
+
+    clamp: function (value,min,max) {
+        return Math.min(Math.max(value,min),max);
     }
 };
 
